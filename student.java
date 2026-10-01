@@ -45,9 +45,9 @@ class Student {
     }
 }
 
-// Main class to run the program
-public class StudentInformationSystem {
-    public static voidmain(String[] args) {
+// Main class name matches the file name 'student.java'
+public class student {
+    public static void main(String[] args) { // Fixed 'voidmain' to 'void main'
         // Create a list to store multiple students
         List<Student> studentList = new ArrayList<>();
 
@@ -58,8 +58,8 @@ public class StudentInformationSystem {
 
         // Displaying all student records
         System.out.println("=== Student Information Records ===");
-        for (Student student : studentList) {
-            student.displayStudentInfo();
+        for (Student s : studentList) {
+            s.displayStudentInfo();
         }
     }
 }
